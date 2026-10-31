@@ -1,0 +1,148 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:endstone_axe",
+            "menu_category": {
+                "group": "itemGroup.name.axe",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1120,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:endstone_axe"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:end_stone"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:damage": 5,
+            "minecraft:enchantable": {
+                "value": 11,
+                "slot": "axe"
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp5_endstone_axe"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "\u00a7eEnd Stone Axe"
+            },
+            "minecraft:digger": {
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+                        },
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:chest",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:wood",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:melon_block",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_stem",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_stem",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:bookshelf",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_stem",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_stem",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crafting_table",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_planks",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_planks",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_stairs",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_trapdoor",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_stairs",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_trapdoor",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_door",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crimson_double_slab",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_door",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:warped_double_slab",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:crafting_table",
+                        "speed": 12
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_axe"
+                ]
+            }
+        }
+    }
+}

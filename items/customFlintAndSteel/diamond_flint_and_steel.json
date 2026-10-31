@@ -1,0 +1,55 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:diamond_flint_and_steel",
+            "menu_category": {
+                "group": "itemGroup.name",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:durability": {
+                "max_durability": 200,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "slot": "flintsteel",
+                "value": 5
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "diamond_flint_and_steel"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Diamond Flint and Steel"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:diamond_flint_and_steel"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:diamond"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:transformable_items"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sp:upgrade_bench",
+			"menu_category": {
+				"category": "items",
+				"is_hidden_in_commands": false
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			}
+		},
+		"components": {
+			"tag:stone": {},
+			"tag:wood": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.5
+			},
+			"minecraft:geometry": "geometry.upgrade_bench",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "smithing_table_top",
+					"render_method": "opaque"
+				},
+				"smithing_table_bottom": {
+					"texture": "smithing_table_bottom",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"smithing_table_front": {
+					"texture": "smithing_table_front",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"smithing_table_top": {
+					"texture": "smithing_table_top",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"smithing_table_side": {
+					"texture": "smithing_table_side",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"crafting_table_side": {
+					"texture": "crafting_table_side",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"crafting_table_front": {
+					"texture": "crafting_table_front",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				}
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:crafting_table": {
+				"table_name": "Upgrade Bench",
+				"crafting_tags": [
+					"upgrade_bench",
+					"emerald_upgrade",
+					"steel_upgrade",
+					"enderite_upgrade"
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sp:sapphire_block",
+            "menu_category": {
+                "category": "construction",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:map_color": "#ffffff",
+            "tag:stone": {},
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.8
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            }
+        },
+        "events": {}
+    }
+}

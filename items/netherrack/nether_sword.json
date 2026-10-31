@@ -1,0 +1,67 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:netherrack_sword",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 35,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 5,
+            "minecraft:enchantable": {
+                "value": 7,
+                "slot": "sword"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:netherrack_sword"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:netherrack"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:digger": {
+                "use_efficiency": false,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 15
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "netherrack_sword"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Netherrack Sword"
+            }
+        }
+    }
+}

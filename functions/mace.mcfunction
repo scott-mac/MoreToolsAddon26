@@ -1,0 +1,10 @@
+fill ~~~ ~~~ stonebrick replace stonebrick
+fill ~~~ ~~~ gravel replace cobblestone
+fill ~~~ ~~~ cobblestone replace stone
+fill ~~~ ~~~ cracked_nether_bricks replace nether_brick
+fill ~~~ ~~~ cracked_deepslate_bricks replace deepslate_bricks
+fill ~~~ ~~~ cracked_deepslate_tiles replace deepslate_tiles
+fill ~~~ ~~~ cracked_polished_blackstone_bricks replace polished_blackstone_bricks
+fill ~~~ ~~~ sand replace sandstone
+fill ~~~ ~~~ stone replace smooth_stone
+playsound mob.wither.break_block @p ~ ~ ~

@@ -1,0 +1,673 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sp:medium_celestite_bud",
+			"menu_category": {
+			
+				"is_hidden_in_commands": false
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1.5
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.5
+			},
+			"minecraft:map_color": "#ADD8E6",
+			"minecraft:loot": "loot_tables/block/empty.json",
+			"minecraft:geometry": "geometry.sp_cluster",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "spb_medium_celestite_bud",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 2,
+			"minecraft:selection_box": {
+				"size": [
+					10,
+					4,
+					10
+				],
+				"origin": [
+					-5,
+					0,
+					-5
+				]
+			},
+			"minecraft:collision_box": {
+				"size": [
+					10,
+					4,
+					10
+				],
+				"origin": [
+					-5,
+					0,
+					-5
+				]
+			},
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "all" 
+                        ],
+                        "block_filter": [
+                            "minecraft:deepslate",
+                            "minecraft:mangrove_roots",
+                            "minecraft:exposed_copper",
+                            "minecraft:cobbled_deepslate_wall",
+                            "minecraft:purpur_block",
+                            "minecraft:cut_copper",
+                            "minecraft:soul_soil",
+                            "minecraft:waxed_cut_copper",
+                            "minecraft:honey_block",
+                            "minecraft:chiseled_bookshelf",
+                            "minecraft:packed_mud",
+                            "minecraft:reinforced_deepslate",
+                            "minecraft:waxed_copper",
+                            "minecraft:prismarine",
+                            "minecraft:cracked_deepslate_tiles",
+                            "minecraft:honeycomb_block",
+                            "minecraft:deepslate_tiles",
+                            "minecraft:oxidized_cut_copper",
+                            "minecraft:redstone_block",
+                            "minecraft:waxed_exposed_cut_copper",
+                            "minecraft:tuff",
+                            "minecraft:copper_block",
+                            "minecraft:sculk_catalyst",
+                            "minecraft:waxed_oxidized_cut_copper",
+                            "minecraft:coral_block",
+                            "minecraft:gold_block",
+                            "minecraft:nether_brick",
+                            "minecraft:netherite_block",
+                            "minecraft:deepslate_bricks",
+                            "minecraft:nether_wart_block",
+                            "minecraft:polished_deepslate",
+                            "minecraft:bamboo_block",
+                            "minecraft:polished_basalt",
+                            "minecraft:basalt",
+                            "minecraft:soul_sand",
+                            "minecraft:amethyst_block",
+                            "minecraft:sculk",
+                            "minecraft:deepslate_tile_wall",
+                            "minecraft:brown_mushroom_block",
+                            "minecraft:crafting_table",
+                            "minecraft:magma",
+                            "minecraft:obsidian",
+                            "minecraft:blackstone",
+                            "minecraft:lapis_block",
+                            "minecraft:wool",
+                            "minecraft:emerald_block",
+                            "minecraft:red_mushroom_block",
+                            "minecraft:cobbled_deepslate",
+                            "minecraft:netherrack",
+                            "minecraft:barrel",
+                            "minecraft:decorated_pot",
+                            "minecraft:exposed_cut_copper",
+                            "minecraft:hay_block",
+                            "minecraft:diamond_block",
+                            "minecraft:oxidized_copper",
+                            "minecraft:cracked_deepslate_bricks",
+                            "minecraft:warped_wart_block",
+                            "minecraft:waxed_exposed_cut_copper",
+                            "minecraft:deepslate_brick_wall",
+                            "minecraft:iron_block",
+                            "minecraft:mud_bricks",
+                            "minecraft:bookshelf",
+                            {
+                                "tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+
+		"permutations": [
+
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							180,
+							0,
+							0
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"all" 
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"up"
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							270,
+							0,
+							0
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"north"
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"south"
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							90
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"west"
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							-90
+						]
+					},
+					"minecraft:placement_filter": {
+						"conditions": [
+							{
+								"allowed_faces": [
+									"east"
+								],
+								"block_filter": [
+									"minecraft:deepslate",
+									"minecraft:mangrove_roots",
+									"minecraft:exposed_copper",
+									"minecraft:cobbled_deepslate_wall",
+									"minecraft:purpur_block",
+									"minecraft:cut_copper",
+									"minecraft:soul_soil",
+									"minecraft:waxed_cut_copper",
+									"minecraft:honey_block",
+									"minecraft:chiseled_bookshelf",
+									"minecraft:packed_mud",
+									"minecraft:reinforced_deepslate",
+									"minecraft:waxed_copper",
+									"minecraft:prismarine",
+									"minecraft:cracked_deepslate_tiles",
+									"minecraft:honeycomb_block",
+									"minecraft:deepslate_tiles",
+									"minecraft:oxidized_cut_copper",
+									"minecraft:redstone_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:tuff",
+									"minecraft:copper_block",
+									"minecraft:sculk_catalyst",
+									"minecraft:waxed_oxidized_cut_copper",
+									"minecraft:coral_block",
+									"minecraft:gold_block",
+									"minecraft:nether_brick",
+									"minecraft:netherite_block",
+									"minecraft:deepslate_bricks",
+									"minecraft:nether_wart_block",
+									"minecraft:polished_deepslate",
+									"minecraft:bamboo_block",
+									"minecraft:polished_basalt",
+									"minecraft:basalt",
+									"minecraft:soul_sand",
+									"minecraft:amethyst_block",
+									"minecraft:sculk",
+									"minecraft:deepslate_tile_wall",
+									"minecraft:brown_mushroom_block",
+									"minecraft:crafting_table",
+									"minecraft:magma",
+									"minecraft:obsidian",
+									"minecraft:blackstone",
+									"minecraft:lapis_block",
+									"minecraft:wool",
+									"minecraft:emerald_block",
+									"minecraft:red_mushroom_block",
+									"minecraft:cobbled_deepslate",
+									"minecraft:netherrack",
+									"minecraft:barrel",
+									"minecraft:decorated_pot",
+									"minecraft:exposed_cut_copper",
+									"minecraft:hay_block",
+									"minecraft:diamond_block",
+									"minecraft:oxidized_copper",
+									"minecraft:cracked_deepslate_bricks",
+									"minecraft:warped_wart_block",
+									"minecraft:waxed_exposed_cut_copper",
+									"minecraft:deepslate_brick_wall",
+									"minecraft:iron_block",
+									"minecraft:mud_bricks",
+									"minecraft:bookshelf",
+									{
+										"tags": "query.any_tag('stone','log','deepslate','metal','netherrack','terracota','diamond_pick_diggable','iron_pick_diggable','stone_pick_diggable','gold_pick_diggable','wood_pick_diggable','mob_spawner','dirt','gravel','snow','sand','wool','end','grass','pumpkin')"
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+
+		]
+	}
+}

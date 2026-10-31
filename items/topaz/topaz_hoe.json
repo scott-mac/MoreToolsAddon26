@@ -1,0 +1,123 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:topaz_hoe",
+            "menu_category": {
+                "group": "itemGroup.name.hoe",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 743,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 4,
+            "minecraft:enchantable": {
+                "value": 13,
+                "slot": "hoe"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:topaz_hoe"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:topaz"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:display_name": {
+                "value": "Topaz Hoe"
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "topaz_hoe"
+                }
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:nether_wart_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:hay_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:target",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:shroomlight",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:leaves",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:leaves2",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:warped_wart_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sculk_catalyst",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sculk_shrieker",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sculk_sensor",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:dried_kelp_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sculk_vein",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:moss_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sculk",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sponge",
+                        "speed": 7
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_hoe"
+                ]
+            }
+        }
+    }
+}

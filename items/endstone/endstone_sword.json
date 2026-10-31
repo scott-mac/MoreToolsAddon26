@@ -1,0 +1,72 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:endstone_sword",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 150,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:endstone_sword"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:end_stone"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:damage": 6,
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp5_endstone_sword"
+                }
+            },
+            "minecraft:enchantable": {
+                "value": 11,
+                "slot": "sword"
+            },
+            "minecraft:display_name": {
+                "value": "\u00a7eEnd Stone Sword"
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 12
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_sword"
+                ]
+            }
+        }
+    }
+}

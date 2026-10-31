@@ -1,0 +1,67 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:uredstone_sword",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 555,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 6,
+            "minecraft:enchantable": {
+                "value": 7,
+                "slot": "sword"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:uredstone_sword"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:quartz"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:digger": {
+                "use_efficiency": false,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 6
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 6
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "uredstone_sword"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "\u00a74Redstone Quartz Sword"
+            }
+        }
+    }
+}

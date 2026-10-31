@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:peridot",
+            "menu_category": {
+                "group": "",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_peridot"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Peridot"
+            }
+        }
+    }
+}

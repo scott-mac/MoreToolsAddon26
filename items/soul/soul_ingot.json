@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:soul_ingot",
+            "menu_category": {
+                "group": "itemGroup.name",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_soul_ingot"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Soul Ingot"
+            }
+        }
+    }
+}

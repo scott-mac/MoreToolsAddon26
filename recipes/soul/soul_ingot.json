@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sp:soul_ingot_1"
+		},
+		"tags": [
+			"enderite_upgrade"
+		],
+		"pattern": [
+			"###",
+			"# #",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "sp:soul"
+			}
+		},
+		"result": {
+			"item": "sp:soul_ingot",
+			"count": 1
+		}
+	}
+}

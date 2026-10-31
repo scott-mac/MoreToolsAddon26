@@ -1,0 +1,16 @@
+
+
+
+{
+"format_version": "1.17",
+    "minecraft:recipe_smithing_transform": {
+        "description": {
+            "identifier": "sp:diamond_leviathan_axe_to_netherite"
+        },
+     "tags": ["smithing_table"],
+     "template": "minecraft:netherite_upgrade_smithing_template",
+     "base": "sp:diamond_leviathan_axe",
+        "addition": "minecraft:netherite_ingot",
+        "result": "sp:netherite_leviathan_axe"
+    }
+}

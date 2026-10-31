@@ -1,0 +1,57 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:brass_leggings",
+            "menu_category": {
+                "group": "itemGroup.name.leggings",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 4,
+                "slot": "armor_legs"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:brass_leggings"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:brass_ingot"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 235,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "brass_leggings"
+                }
+            },
+            "minecraft:wearable": {
+                "protection": 4,
+                "slot": "slot.armor.legs"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:trimmable_armors"
+                ]
+            }
+        }
+    }
+}

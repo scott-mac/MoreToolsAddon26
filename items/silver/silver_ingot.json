@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:silver_ingot",
+            "menu_category": {
+                "group": "itemGroup.name.ingot",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_silver_ingot"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Silver Ingot"
+            }
+        }
+    }
+}

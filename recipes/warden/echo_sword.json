@@ -1,0 +1,31 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sp:echo_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"X",
+			"X",
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:stick"
+			},
+			"X": {
+				"item": "minecraft:echo_shard"
+			}
+		},
+		"result": [
+			{
+				"item": "sp:echo_sword",
+				"count": 1
+			}
+		]
+	}
+}

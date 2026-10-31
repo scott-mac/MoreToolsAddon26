@@ -1,0 +1,1 @@
+execute as @e[hasitem=[{item=sp:enderite_helmet,location=slot.armor.head},{item=sp:enderite_chestplate,location=slot.armor.chest},{item=sp:enderite_leggings,location=slot.armor.legs},{item=sp:enderite_boots,location=slot.armor.feet}]] positioned ~ ~ ~ run particle minecraft:mob_portal ~ ~1 ~

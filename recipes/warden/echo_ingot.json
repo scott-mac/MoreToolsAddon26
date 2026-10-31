@@ -1,0 +1,34 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sp:echo_ingot"
+		},
+		"tags": [
+			"enderite_upgrade"
+		],
+		"pattern": [
+			"###",
+			"TOT",
+			"GGG"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:echo_shard"
+			},
+			"T": {
+				"item": "minecraft:netherite_ingot"
+			},
+			"O": {
+				"item": "minecraft:sculk_catalyst"
+			},
+			"G": {
+				"item": "sp:enderite_ingot"
+			}
+		},
+		"result": {
+			"item": "sp:echo_ingot",
+			"count": 1
+		}
+	}
+}

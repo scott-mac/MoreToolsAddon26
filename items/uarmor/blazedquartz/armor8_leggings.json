@@ -1,0 +1,64 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:uquartz_leggings",
+            "menu_category": {
+                "group": "itemGroup.name.leggings",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 24,
+                "slot": "armor_legs"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:uquartz_leggings"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:blaze_powder"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 1050,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "uquartz_leggings"
+                }
+            },
+            "minecraft:allow_off_hand": true,
+            "minecraft:display_name": {
+                "value": "\u00a76Blazed Quartz Leggings"
+            },
+            "minecraft:knockback_resistance": {
+                "protection": 0.25
+            },
+            "minecraft:wearable": {
+                "protection": 5,
+                "slot": "slot.armor.legs"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:trimmable_armors"
+                ]
+            }
+        }
+    }
+}

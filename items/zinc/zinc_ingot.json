@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:zinc_ingot",
+            "menu_category": {
+                "group": "itemGroup.name.ingot",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "zinc_ingot"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Zinc Ingot"
+            }
+        }
+    }
+}

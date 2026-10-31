@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:sulfur",
+            "menu_category": {
+                "group": "itemGroup.name",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sulfur"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Sulfur Dust"
+            },
+            "minecraft:fuel": {
+                "duration": 25
+            }
+        }
+    }
+}

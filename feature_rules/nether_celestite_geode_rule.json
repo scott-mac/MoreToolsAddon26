@@ -1,0 +1,51 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "sp:nether_celestite_geode_rule",
+			"places_feature": "sp:celestite_geode_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "nether"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"scatter_chance": 1.2, //1.5 seems fine for how rare it is(mc probably has about 1.8-2.5 overworld)
+			"iterations": 1,
+			"coordinate_eval_order": "zyx",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					15,
+					110
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

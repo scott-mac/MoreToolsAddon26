@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sp:warden_leggings"
+		},
+		"tags": [
+			"enderite_upgrade"
+		],
+		"pattern": [
+			"XXX",
+			"X X",
+			"X X"
+		],
+		"key": {
+			"X": {
+				"item": "sp:echo_ingot"
+			}
+		},
+		"result": {
+			"item": "sp:warden_leggings"
+		}
+	}
+}

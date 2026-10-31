@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.0",
+
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "sp:netherrack_copper_ore_feature"
+		},
+
+		"count": 11,
+		"replace_rules": [
+			{
+				"places_block": "sp:netherrack_copper_ore",
+				"may_replace": [
+					"minecraft:netherrack"
+				]
+			}
+		]
+	}
+}

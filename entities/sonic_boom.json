@@ -1,0 +1,153 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sp:sonic_boom",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"kill_entity": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"sonic_boom"
+				]
+			},
+			"minecraft:behavior.sonic_boom": {
+				"priority": 0,
+				"attack_cooldown": 10,
+				"attack_damage": 14,
+				"duration": 3,
+				"duration_until_attack_sound": 1.7,
+				"attack_range_horizontal": 24,
+				"attack_range_vertical": 28,
+				"knockback_height_cap": 0,
+				"knockback_vertical_strength": 0.8,
+				"knockback_horizontal_strength": 0.5,
+				"speed_multiplier": 1,
+				"charge_sound": "sonic_charge",
+				"attack_sound": "sonic_boom"
+			},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:breathable": {
+				"suffocate_time": 0,
+				"total_supply": 30
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 0
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"reselect_targets": true,
+				"must_see": false,
+				"must_see_forget_duration": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "monster"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "mob"
+								}
+							]
+						},
+						"max_dist": 20
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_tag",
+									"subject": "other",
+									"operator": "!=",
+									"value": "boom"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 20
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:timer": {
+				"looping": false,
+				"time_down_event": {
+					"event": "do"
+				},
+				"time": [
+					2.4,
+					2.8
+				]
+			}
+		},
+		"events": {
+			"do": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"kill_entity"
+							]
+						}
+					},
+					{
+						"queue_command": {
+							"command": "tag @p[r=2] remove boom"
+						}
+					}
+				]
+			}
+		}
+	}
+}

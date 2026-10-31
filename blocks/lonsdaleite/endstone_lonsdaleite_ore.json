@@ -1,0 +1,24 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sp:endstone_lonsdaleite_ore",
+            "is_experimental": false,
+            "menu_category": {
+                "category": "construction",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:map_color": "#E88831",
+            "tag:stone": {},
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.9
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            }
+        },
+        "events": {}
+    }
+}

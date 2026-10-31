@@ -1,0 +1,449 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:usteel_shovel",
+            "menu_category": {
+                "group": "itemGroup.name.shovel",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 711,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 5,
+            "minecraft:enchantable": {
+                "value": 16,
+                "slot": "shovel"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:usteel_shovel"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:quartz"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+                        },
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mud",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:clay",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:lodestone",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:coal_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:packed_mud",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mud_bricks",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mud_brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mud_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:iron_block",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:gold_block",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:brick_block",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:red_sandstone",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_andesite_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:smooth_quartz_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:brick_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:smooth_sandstone_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:cobblestone_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:deepslate_brick_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:deepslate_tile_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_deepslate_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_brick_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:blackstone_wall",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:stone_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:stone_brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mossy_stone_brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:stone_block_slab4",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:double_stone_block_slab4",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:coal_block",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:sandstone_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:nether_brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:normal_stone_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:blackstone_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:blackstone_double_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:cracked_polished_blackstone_bricks",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_bricks",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_double_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_brick_double_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_blackstone_brick_slab",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:granite_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_granite_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:diorite_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:polished_diorite_stairs",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_cobalt_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_jade_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_onyx_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_rose_gold_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_silver_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_sulfur_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_copper_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:netherrack_uranium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:enderite_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:endstone_aetherium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:endstone_enderium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:endstone_lonsdaleite_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:endstone_visinium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:amber_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:amber_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:amber_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:citrine_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:peridot_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:platinum_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:ruby_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:sapphire_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:silver_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:tin_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:titanium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:topaz_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:tourmaline_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:uranium_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:zinc_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_topaz_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_peridot_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_citrine_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_ruby_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_tourmaline_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "sp:deepslate_sapphire_ore",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:farmland",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:grass",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:grass_path",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:gravel",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:mycelium",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:podzol",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:dirt",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:sand",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:soul_sand",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:soul_soil",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:concrete_powder",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:snow",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:snow_layer",
+                        "speed": 8
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "usteel_shovel"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "\u00a77Steel Quartz Shovel"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_shovel"
+                ]
+            }
+        }
+    }
+}

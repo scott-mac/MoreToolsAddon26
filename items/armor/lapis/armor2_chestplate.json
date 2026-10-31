@@ -1,0 +1,60 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:lapis_chestplate",
+            "menu_category": {
+                "group": "itemGroup.name.chestplate",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 19,
+                "slot": "armor_torso"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:lapis_chestplate"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:lapis_lazuli"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 500,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "lapis_chestplate"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Lapis Chestplate"
+            },
+            "minecraft:wearable": {
+                "protection": 6,
+                "slot": "slot.armor.chest"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:trimmable_armors"
+                ]
+            }
+        }
+    }
+}

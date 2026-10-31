@@ -1,0 +1,24 @@
+{
+	"format_version": "1.18.0",
+
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "sp:amber_ore_feature"
+		},
+
+		"count": 7,
+		"replace_rules": [
+			{
+				"places_block": "sp:amber_ore",
+				"may_replace": [
+					{
+						"name": "minecraft:stone",
+						"states" : {
+							"stone_type": "stone"
+						}
+					}
+				]
+			}
+		]
+	}
+}

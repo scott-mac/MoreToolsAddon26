@@ -1,0 +1,22 @@
+{
+	"format_version": "1.18.0",
+
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "sp:tungsten_ore_feature"
+		},
+
+		"count": 8,
+		"replace_rules": [
+						{
+				"places_block": "sp:tungsten_ore",
+				"may_replace": [
+					{
+						"name": "minecraft:deepslate",
+						"states" : {}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "v6.8.5 More Tools Addon Balanced BP",
+		"description": "Official download §amcpedl.com §f& §6CurseForge §f| Downloading this add-on from other sites may contain malware, spyware or keylogger! §cYoutube.com/c/SoriPop §bTwitter @sori662_pop §aCreator MCPEDL:SorYPMod §6Creator CurseForge:SorYPMod",
+		"uuid": "86bb4632-3521-443c-9b6a-c375e871ee64",
+		"version": [
+			6,
+			8,
+			5
+		],
+		"min_engine_version": [
+			1,
+			21,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "0cacb9ad-e78f-4a83-857f-d4cdc1a8969f",
+			"version": [
+				6,
+				8,
+				5
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "afe79f55-e311-4763-81aa-cc93de4e4aca",
+			"entry": "scripts/main.js",
+			"version": [
+				6,
+				8,
+				5
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				6,
+				8,
+				5
+			],
+			"uuid": "4315677f-08d3-456d-b982-d3d21f39dbd2"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.14.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"SorYPMod"
+		],
+		"url": "https://mcpedl.com/more-tools-addon/",
+		"generated_with": {
+			"bridge": [
+				"1.8.3",
+				"1.8.4",
+				"1.8.5"
+			]
+		}
+	}
+}

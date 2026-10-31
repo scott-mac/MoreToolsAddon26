@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.0",
+
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "sp:zinc_ore_feature"
+		},
+
+		"count": 7,
+		"replace_rules": [
+			{
+				"places_block": "sp:zinc_ore",
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+	}
+}

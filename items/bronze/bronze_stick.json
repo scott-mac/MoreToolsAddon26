@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:bronze_stick",
+            "menu_category": {
+                "group": "itemGroup.name",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_bronze_stick"
+                }
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:display_name": {
+                "value": "Bronze Stick"
+            }
+        }
+    }
+}

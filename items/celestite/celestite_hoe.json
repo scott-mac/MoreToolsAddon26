@@ -1,0 +1,123 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:celestite_hoe",
+            "menu_category": {
+                "group": "itemGroup.name.hoe",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1625,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 6,
+            "minecraft:enchantable": {
+                "value": 15,
+                "slot": "hoe"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:celestite_hoe"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:celestite_shard"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:display_name": {
+                "value": "Celestite Hoe"
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_celestite_hoe"
+                }
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:nether_wart_block",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:hay_block",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:target",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:shroomlight",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:leaves",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:leaves2",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:warped_wart_block",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sculk_catalyst",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sculk_shrieker",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sculk_sensor",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:dried_kelp_block",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sculk_vein",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:moss_block",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sculk",
+                        "speed": 10
+                    },
+                    {
+                        "block": "minecraft:sponge",
+                        "speed": 10
+                    }
+                ]
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_hoe"
+                ]
+            }
+        }
+    }
+}

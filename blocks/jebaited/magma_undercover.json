@@ -1,0 +1,35 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sp:magma_undercover",
+			"menu_category": {
+			
+				"is_hidden_in_commands": false
+			}
+		},
+        "components": {
+ 
+            "minecraft:map_color": "#EC3407",
+            "minecraft:loot": "empty",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "magma",
+                    "render_method": "opaque",
+                    "ambient_occlusion": true
+                }
+            },
+             "minecraft:custom_components": ["sp:fundercover"],
+            "minecraft:tick": {
+                "interval_range": [130, 160],
+                "looping": true
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.9
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            }
+        }
+    }
+}

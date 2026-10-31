@@ -1,0 +1,131 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:coal_shovel",
+            "menu_category": {
+                "group": "itemGroup.name",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 53,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 1,
+            "minecraft:enchantable": {
+                "value": 16,
+                "slot": "shovel"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:coal_shovel"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:coal"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+                        },
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:clay",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:mud",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:farmland",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:grass",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:grass_path",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:gravel",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:mycelium",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:podzol",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:dirt",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:sand",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:soul_sand",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:soul_soil",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:concrete_powder",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:snow",
+                        "speed": 3
+                    },
+                    {
+                        "block": "minecraft:snow_layer",
+                        "speed": 3
+                    }
+                ]
+            },
+            "minecraft:display_name": {
+                "value": "Coal Shovel"
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "coal_shovel"
+                }
+            },
+            "minecraft:fuel": {
+                "duration": 80
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_shovel"
+                ]
+            }
+        }
+    }
+}

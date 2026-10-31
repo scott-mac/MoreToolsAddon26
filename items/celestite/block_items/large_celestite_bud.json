@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:item_large_celestite_bud",
+            "menu_category": {
+                "group": "",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_large_celestite_bud"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Large Celestite Bud"
+            },
+            "minecraft:block_placer": {
+                "block": "sp:large_celestite_bud"
+            }
+        }
+    }
+}

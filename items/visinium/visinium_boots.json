@@ -1,0 +1,63 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:visinium_boots",
+            "menu_category": {
+                "group": "itemGroup.name.boots",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 19,
+                "slot": "armor_feet"
+            },
+            "minecraft:display_name": {
+                "value": "Visinium Boots"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:visinium_boots"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:visinium_ingot"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 388,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:knockback_resistance": {
+                "protection": 0.13
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "visinium_boots"
+                }
+            },
+            "minecraft:wearable": {
+                "protection": 4,
+                "slot": "slot.armor.feet"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:trimmable_armors"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:aetherium_leggings",
+            "menu_category": {
+                "group": "itemGroup.name.leggings",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 20,
+                "slot": "armor_legs"
+            },
+            "minecraft:durability": {
+                "max_durability": 1298,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:aetherium_leggings"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:aetherium_ingot"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "aetherium_leggings"
+                }
+            },
+            "minecraft:knockback_resistance": {
+                "protection": 0.13
+            },
+            "minecraft:display_name": {
+                "value": "Aetherium Leggings"
+            },
+            "minecraft:wearable": {
+                "protection": 5,
+                "slot": "slot.armor.legs"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:trimmable_armors"
+                ]
+            }
+        }
+    }
+}

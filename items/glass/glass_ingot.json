@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:glass_ingot",
+            "menu_category": {
+                "group": "itemGroup.name.ingot",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sp_glass_ingot"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Glass Ingot"
+            }
+        }
+    }
+}

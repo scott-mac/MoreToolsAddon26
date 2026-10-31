@@ -1,0 +1,67 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:tourmaline_sword",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1345,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:tourmaline_sword"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:tourmaline"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:damage": 7,
+            "minecraft:enchantable": {
+                "value": 16,
+                "slot": "sword"
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:digger": {
+                "use_efficiency": false,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 8
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 8
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "tourmaline_sword"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Tourmaline Sword"
+            }
+        }
+    }
+}

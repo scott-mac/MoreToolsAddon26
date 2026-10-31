@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:cheese",
+            "menu_category": {
+                "group": "itemGroup.name.miscFood",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:food": {
+                "nutrition": 8,
+                "saturation_modifier": 1
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:icon": {
+                "textures": {
+                    "default": "cheese"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Cheese"
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 1.7,
+                "movement_modifier": 0.5
+            }
+        }
+    }
+}

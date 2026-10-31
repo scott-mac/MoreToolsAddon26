@@ -1,0 +1,50 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:geode_feature": {
+  "description": {
+    "identifier": "sp:celestite_geode_feature"
+  },
+  "filler": "minecraft:air",
+  "inner_layer": "sp:celestite_block",
+  "alternate_inner_layer": "sp:budding_celestite",
+  "middle_layer": "minecraft:calcite",
+  "outer_layer": "minecraft:smooth_basalt",
+
+ //   "inner_placements": [
+//    {
+ //   "name": "sp:medium_celestite_bud", 	//more info req about adding custom block states
+//    "states": {
+//      "sp:block_rotation": "up"
+ //   	}
+//    },
+//    {
+  //  "name": "sp:celestite_cluster",
+  // "states": {
+//      "sp:block_rotation": "up"
+//    	}
+//    },
+ //   {
+ //   "name": "sp:small_celestite_bud",
+ //   "states": {
+//      "sp:block_rotation": "up"
+//    	}
+//    }
+ // ],
+
+  "min_outer_wall_distance": 4,
+  "max_outer_wall_distance": 8,
+  "min_distribution_points": 3,
+  "max_distribution_points": 6,
+  "min_point_offset": 1,
+  "max_point_offset": 3,
+  "max_radius": 16,
+  "crack_point_offset": 2,
+  "generate_crack_chance": 0.55,
+  "base_crack_size": 2,
+  "noise_multiplier": 0.05,
+  "use_potential_placements_chance": 0.10,
+  "use_alternate_layer0_chance": 0.15,  //refers to budding block
+  "placements_require_layer0_alternate": true,
+  "invalid_blocks_threshold": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sp:tin_block",
+            "menu_category": {
+                "category": "construction",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:map_color": "#CD1616",
+            "tag:stone": {},
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.7
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            }
+        },
+        "events": {}
+    }
+}

@@ -1,0 +1,13 @@
+{
+"format_version": "1.17",
+    "minecraft:recipe_smithing_transform": {
+        "description": {
+            "identifier": "sp:ench_diamond_apple_to_netherite_4"
+        },
+     "tags": ["smithing_table"],
+     "template": "minecraft:netherite_upgrade_smithing_template",
+     "base": "sp:enchanted_diamond_apple",
+        "addition": "minecraft:netherite_ingot",
+        "result": "sp:enchanted_netherite_apple"
+    }
+}

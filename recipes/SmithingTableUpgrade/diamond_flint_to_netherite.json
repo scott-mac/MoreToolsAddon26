@@ -1,0 +1,16 @@
+
+
+
+{
+"format_version": "1.17",
+    "minecraft:recipe_smithing_transform": {
+        "description": {
+            "identifier": "sp:diamond_flint_and_steel_to_netherite"
+        },
+     "tags": ["smithing_table"],
+     "template": "minecraft:netherite_upgrade_smithing_template",
+     "base": "sp:diamond_flint_and_steel",
+        "addition": "minecraft:netherite_ingot",
+        "result": "sp:netherite_flint_and_steel"
+    }
+}

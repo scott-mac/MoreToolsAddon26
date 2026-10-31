@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.0",
+
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "sp:uranium_ore_feature"
+		},
+
+		"count": 6,
+		"replace_rules": [
+	
+			{
+				"places_block": "sp:uranium_ore",
+				"may_replace": [
+					"minecraft:tuff"
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,67 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:amber_dagger",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 91,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 3.5,
+            "minecraft:enchantable": {
+                "value": 17,
+                "slot": "sword"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:amber_dagger"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:raw_amber"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:digger": {
+                "use_efficiency": false,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 13
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 13
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "amber_dagger"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Amber Dagger"
+            }
+        }
+    }
+}

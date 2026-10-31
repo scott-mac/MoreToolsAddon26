@@ -1,0 +1,7 @@
+tag @p[hasitem=[{item=sp:uranium_helmet,location=slot.armor.head},{item=sp:uranium_chestplate,location=slot.armor.chest},{item=sp:uranium_leggings,location=slot.armor.legs},{item=sp:uranium_boots,location=slot.armor.feet}]] add uranium
+
+
+execute as @e[hasitem=[{item=sp:uranium_helmet,location=slot.armor.head},{item=sp:uranium_chestplate,location=slot.armor.chest},{item=sp:uranium_leggings,location=slot.armor.legs},{item=sp:uranium_boots,location=slot.armor.feet}]] positioned ~ ~ ~ run effect @e[tag=!uranium,type=!item,type=!xp_orb,type=!falling_block,type=!snowball,type=!boat,type=!dragon_fireball,type=!area_effect_cloud,type=!arrow,type=!ender_pearl,type=!ender_crystal,type=!egg,type=!chest_minecart,type=!hopper_minecart,type=!minecart,type=!eye_of_ender_signal,type=!fireworks_rocket,type=!fireball,type=!tnt_minecart,type=!painting,type=!fishing_hook,type=!small_fireball,type=!thrown_trident,type=!painting,type=!armor_stand,type=!splash_potion,type=!lingering_potion,type=!lightning_bolt,type=!tnt,r=7] nausea 5 2 false
+
+
+tag @p[hasitem=[{item=sp:uranium_helmet,location=slot.armor.head},{item=sp:uranium_chestplate,location=slot.armor.chest},{item=sp:uranium_leggings,location=slot.armor.legs},{item=sp:uranium_boots,location=slot.armor.feet}]] remove uranium

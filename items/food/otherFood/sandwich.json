@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:sandwich",
+            "menu_category": {
+                "group": "itemGroup.name.cookedFood",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:food": {
+                "nutrition": 18,
+                "saturation_modifier": 3
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sandwich"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Sandwich"
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 1.7,
+                "movement_modifier": 0.5
+            }
+        }
+    }
+}

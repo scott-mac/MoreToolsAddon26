@@ -1,0 +1,74 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:baked_iron_sword",
+            "menu_category": {
+                "group": "itemGroup.name.sword",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 450,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:baked_iron_sword"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "minecraft:baked_potato"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:damage": 8,
+            "minecraft:enchantable": {
+                "value": 14,
+                "slot": "sword"
+            },
+            "minecraft:digger": {
+                "use_efficiency": false,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 12
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 12
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "baked_iron_sword"
+                }
+            },
+            "minecraft:food": {
+                "nutrition": 8,
+                "saturation_modifier": 1
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:display_name": {
+                "value": "Baked Potato Sword"
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 1.7,
+                "movement_modifier": 0.5
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sp:sapphire_shovel",
+            "menu_category": {
+                "group": "itemGroup.name.shovel",
+                "category": "equipment",
+                "is_hidden_in_commands": false
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1497,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 4,
+            "minecraft:enchantable": {
+                "value": 20,
+                "slot": "shovel"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sp:sapphire_shovel"
+                        ],
+                        "repair_amount": "query.max_durability / 2"
+                    },
+                    {
+                        "items": [
+                            "sp:sapphire"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability * 0.8"
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+                        },
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:clay",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:mud",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:farmland",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:grass",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:grass_path",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:gravel",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:mycelium",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:podzol",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:dirt",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:sand",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:soul_sand",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:soul_soil",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:concrete_powder",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:snow",
+                        "speed": 9
+                    },
+                    {
+                        "block": "minecraft:snow_layer",
+                        "speed": 9
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "textures": {
+                    "default": "sapphire_shovel"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Sapphire Shovel"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_shovel"
+                ]
+            }
+        }
+    }
+}
